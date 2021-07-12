@@ -128,3 +128,80 @@ hr {
     border-radius: 15px;
     margin-left: 20px;
 }
+
+
+
+
+
+/* media quaries */
+/* for mobile phones */
+@media only screen and (max-width: 688px) {
+    main {
+        box-sizing: border-box;
+    }
+    section {
+        padding: auto;
+    }
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .players {
+        grid-template-columns: 1fr 1fr;
+    }
+    .player {
+        flex-direction: column;
+    }
+    .blogs {
+        grid-template-columns: 1fr;
+    }
+    .blog-info h3 {
+        margin: 0;
+    }
+    .courses {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+}
+
+/* for tablets */
+@media only screen and (min-width: 688px) and (max-width: 1040px) {
+    main {
+        box-sizing: border-box;
+    }
+    section {
+        padding: auto;
+    }
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .players {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .player {
+        flex-direction: column;
+    }
+    .blogs {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .blog {
+        flex-direction: column;
+    }
+    .blog-info {
+        margin: 0;
+    }
+    .courses {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+        justify-items: center;
+    }
+}
